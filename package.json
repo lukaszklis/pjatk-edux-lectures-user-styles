@@ -1,0 +1,27 @@
+{
+  "name": "pjatk-edux-lectures-user-styles",
+  "version": "1.0.0",
+  "private": true,
+  "description": "User styles for lectures available on the Edux platform at PJATK.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "cp config.yaml.dist config.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukaszklis/pjatk-edux-lectures-user-styles.git"
+  },
+  "author": "Łukasz Kliś",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukaszklis/pjatk-edux-lectures-user-styles/issues"
+  },
+  "homepage": "https://github.com/lukaszklis/pjatk-edux-lectures-user-styles#readme",
+  "dependencies": {
+    "fs-extra": "^4.0.2",
+    "js-yaml": "^3.10.0",
+    "path": "^0.12.7",
+    "replace-in-file": "^3.0.0-beta.2"
+  }
+}
