@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "postinstall": "cp settings.yaml.dist settings.yaml",
+    "setup": "cp settings.yaml.dist settings.yaml",
     "test": "tsc -p tsconfig.test.json && ava build/tests/**/*.test.js --verbose"
   },
   "repository": {
