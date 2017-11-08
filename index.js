@@ -1,5 +1,6 @@
-const validateLectureIds = require('./src/validate-lecture-ids');
-const createFromTemplate = require('./src/create-from-template');
+require('ts-node').register({
+  fast: true,
+  noProject: true
+});
 
-validateLectureIds();
-createFromTemplate();
+module.exports = require('./src/bootstrap.ts');
