@@ -1,39 +1,52 @@
 {
-  "name": "pjatk-edux-lectures-user-styles",
-  "version": "1.0.0",
-  "private": true,
-  "description": "User styles for lectures available on the Edux platform at PJATK.",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "setup": "cp settings.yaml.dist settings.yaml",
-    "test": "tsc -p tsconfig.test.json && ava build/tests/**/*.test.js --verbose"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lukaszklis/pjatk-edux-lectures-user-styles.git"
-  },
-  "author": "Łukasz Kliś",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lukaszklis/pjatk-edux-lectures-user-styles/issues"
-  },
-  "homepage": "https://github.com/lukaszklis/pjatk-edux-lectures-user-styles#readme",
-  "dependencies": {
-    "fs-extra": "^4.0.2",
-    "js-yaml": "^3.10.0",
-    "path": "^0.12.7",
-    "replace-in-file": "^3.0.0-beta.2",
-    "ts-node": "^3.3.0",
-    "typescript": "^2.5.3"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^4.0.2",
-    "@types/js-yaml": "^3.9.1",
-    "@types/node": "^8.0.45",
-    "@types/sinon": "^2.3.6",
-    "ava": "^0.22.0",
-    "sinon": "^4.0.1",
-    "tslint": "^5.7.0"
-  }
+    "name": "pjatk-edux-lectures-user-styles",
+    "version": "1.0.0",
+    "private": true,
+    "description": "User styles for lectures available on the Edux platform at PJATK.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "setup": "cp settings.yaml.dist settings.yaml",
+        "lint": "tsc --noEmit -p . && tslint \"*.ts\"",
+        "test": "tsc --noEmit -p . && jest --no-cache"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lukaszklis/pjatk-edux-lectures-user-styles.git"
+    },
+    "author": "Łukasz Kliś",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lukaszklis/pjatk-edux-lectures-user-styles/issues"
+    },
+    "homepage": "https://github.com/lukaszklis/pjatk-edux-lectures-user-styles#readme",
+    "dependencies": {
+        "@types/fs-extra": "^5.0.1",
+        "@types/jest": "^22.1.2",
+        "@types/js-yaml": "^3.9.1",
+        "@types/node": "^9.4.6",
+        "chalk": "^2.3.2",
+        "fs-extra": "^5.0.0",
+        "jest": "^22.3.0",
+        "js-yaml": "^3.10.0",
+        "path": "^0.12.7",
+        "replace-in-file": "^3.1.1",
+        "ts-jest": "^22.0.4",
+        "ts-node": "^5.0.1",
+        "tslint": "^5.9.1",
+        "typescript": "^2.7.2"
+    },
+    "jest": {
+        "transform": {
+            ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testRegex": "-spec\\.ts$",
+        "moduleFileExtensions": [
+            "ts",
+            "js"
+        ],
+        "modulePaths": [
+            "<rootDir>"
+        ]
+    }
 }
