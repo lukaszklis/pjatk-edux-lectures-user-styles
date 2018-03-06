@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "baseUrl": "tests",
-    "outDir": "build/tests",
-    "target": "es2015",
-    "module": "commonjs",
-    "sourceMap": true
-  }
-}

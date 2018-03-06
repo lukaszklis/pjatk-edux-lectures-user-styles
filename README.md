@@ -6,14 +6,14 @@ read the materials at all.
 
 ## Dependencies
 
-* Node
-* NPM
+* Node `8.9.1`+
+* yarn `v1.5.1`+ (suggested, however npm `5.6.0`+ is going to work as well)
 
 ## How to use
 
 1. Clone this repository.
-1. Install dependencies via `npm i`.
-1. Setup the settings.yaml file by running `npm run setup`.
+1. Install dependencies via: `yarn` (or `npm i`).
+1. Create necessary config files via: `yarn run setup` (or `npm run setup`).
 1. Add an array of lecture IDs to the just created `settings.yaml` file.
-1. Generate your own copy of user styles: `npm start`.
+1. Generate your own copy of user styles: `yarn start` (or `npm start`).
 1. Import the generated CSS file (`build/user-styles.css`) in your browser’s extension.

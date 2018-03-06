@@ -1,13 +1,10 @@
 import * as fse from 'fs-extra';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
-
-interface Settings {
-  lectureIds: number[];
-}
+import { Settings } from './interface/settings';
 
 export const buildFilePath = path.resolve(__dirname, '../build/user-styles.css');
-export const templateFilePath = path.resolve(__dirname, '../templates/user-styles.template.css');
+export const templateFilePath = path.resolve(__dirname, '../template/user-styles.template.css');
 
 export function getSettings(): Settings {
   try {

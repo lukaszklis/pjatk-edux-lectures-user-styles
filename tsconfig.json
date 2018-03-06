@@ -1,20 +1,22 @@
 {
-  "compilerOptions": {
-    "target": "es2015",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "skipDefaultLibCheck": true,
-    "noEmit": true,
-    "lib": [
-      "es2015"
-    ],
-    "types": [
-      "fs-extra",
-      "js-yaml",
-      "node"
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "skipDefaultLibCheck": true,
+        "noEmit": true,
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "types": [
+            "fs-extra",
+            "jest",
+            "js-yaml",
+            "node"
+        ]
+    },
+    "exclude": [
+        "node_modules"
     ]
-  },
-  "exclude": [
-    "node_modules"
-  ]
 }
